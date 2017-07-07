@@ -25,7 +25,7 @@ class ViewController: UIViewController, HMHomeManagerDelegate, UITableViewDelega
     }
     func homeManagerDidUpdateHomes(_ manager: HMHomeManager) {
         homeKitHomeManager = manager
-        countLabel.text = "HOME COUNT \((homeKitHomeManager.homes.count)))"
+        countLabel.text = "HOME COUNT: \((homeKitHomeManager.homes.count))"
         self.tableView.reloadData()
     }
     func homeManager(_ manager: HMHomeManager, didAdd home: HMHome) {
